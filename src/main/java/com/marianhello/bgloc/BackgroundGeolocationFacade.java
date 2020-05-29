@@ -78,7 +78,7 @@ public class BackgroundGeolocationFacade {
         UncaughtExceptionLogger.register(context.getApplicationContext());
 
         logger = LoggerManager.getLogger(BackgroundGeolocationFacade.class);
-        LoggerManager.enableDBLogging();
+        LoggerManager.disableDBLogging();
 
         logger.info("Initializing plugin");
 
